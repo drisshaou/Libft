@@ -6,7 +6,7 @@
 /*   By: drhaouha <drhaouha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 19:26:55 by drhaouha          #+#    #+#             */
-/*   Updated: 2024/05/23 12:13:02 by drhaouha         ###   ########.fr       */
+/*   Updated: 2024/05/23 12:31:45 by drhaouha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	new_lst = NULL;
 	if (!lst || !f || !del)
 		return (NULL);
-	// first = ft_lstnew(f(lst->content));
-	// if (first == NULL)
-	// 	return (NULL);
-	// lst = lst->next;
 	first = NULL;
 	while (lst)
 	{
